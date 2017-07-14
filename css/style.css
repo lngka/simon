@@ -2,6 +2,7 @@
 #title {
   font-size: 3em;
   transform: translateY(3vh);
+  text-align: center;
 }
 #logo,
 #wrapper {
@@ -11,6 +12,7 @@
 
 #logo {
   font-size: 2em;
+  margin-bottom: 0;
 }
 
 .outer {
@@ -124,6 +126,10 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
+}
+
+.test {
+  background: black;
 }
 
 /*===============================================the switch==================================================================*/

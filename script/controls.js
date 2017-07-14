@@ -54,10 +54,9 @@ function onYellow() {
   checkUserSolution();
 }
 
-
 function onStart() {
     resetData();
-    updateDisplay("00");
+    updateDisplay("0");
     GAME.phase = "samplephase";
     nextRound();
 }
