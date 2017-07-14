@@ -1,0 +1,232 @@
+/*========================================general structure========================================*/
+#title {
+  font-size: 3em;
+  transform: translateY(3vh);
+}
+#logo,
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  font-size: 2em;
+}
+
+.outer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: solid black 2px;
+  border-radius: 100%;
+  padding-bottom: 100%;
+  background: white;
+  transform: translateY(10vh);
+}
+
+.interface {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+.quarter-border {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 10px 1px #fff inset;
+}
+
+/*===============================================the circle pieces================================================*/
+.green {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  padding-bottom: 50%;
+  background-color: #4CAF50;
+  border-top-right-radius: 0;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+}
+.red {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: auto;
+  padding-bottom: 50%;
+  background-color: #B71C1C;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+}
+.blue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: auto;
+  padding-bottom: 50%;
+  background-color: #00CCFF;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 100%;
+  cursor: pointer;
+}
+.yellow {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: auto;
+  padding-bottom: 50%;
+  background-color: #F1C40F;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+}
+.inner {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  padding-bottom: 50%;
+  background-color: white;
+  border-radius: 100%;
+  z-index: 10;
+  left: 25%;
+  top: 25%;
+  box-shadow: 0 0 0px 10px #4E342E;
+
+}
+
+/*===================================================the buttons========================================================*/
+
+#startButton .shape{
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+  background-color: #CC3333;
+  outline: none;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px #660000 inset;
+}
+#display{
+  color: #E74C3C;
+  background-color: black;
+  border-color: #424242;
+  width: 70%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+/*===============================================the switch==================================================================*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*move the strict label down*/
+.switch p{
+  transform: translateY(34px);
+  text-align: center;
+}
+
+/*================================================the shiny shiny====================================================*/
+#startButton .shape:active {
+  box-shadow: 0 0 5px 1px #660000 inset,
+  0 0 100px 60px #660000 inset;
+}
+.red:active {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #FF3333 inset;
+}
+.green:active {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #33FF99 inset;
+}
+.blue:active {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #0ff inset;
+}
+.yellow:active {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #FFFF33 inset;
+}
+
+.redActive {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #FF3333 inset;
+}
+.greenActive {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #33FF99 inset;
+}
+.blueActive {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #0ff inset;
+}
+.yellowActive {
+  box-shadow: 0 0 0px 15px #424242,
+              0 0 100px 100px #FFFF33 inset;
+}

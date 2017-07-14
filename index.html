@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simon</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- custom  CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 id="title" class="display-4 mx-auto">Eight to Win</h1>
+        <div id="wrapper" class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-4">
+          <div class="outer">
+              <div id="greenButton" class="green quarter-border green-glow"></div>
+              <div id="redButton"  class="red quarter-border red-glow"></div>
+              <div id="blueButton" class="blue quarter-border blue-glow"></div>
+              <div id="yellowButton" class="yellow quarter-border yellow-glow"></div>
+              <div class="inner">
+                <div class="interface">
+                  <div class="col">
+                    <div class="row">
+                      <p id="logo">Simon&reg;</p>
+                      <input type="text" id="display" class="text-center d-block" value="0" disabled>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="d-inline mx-auto" id="startButton">
+                        <div class="shape"></div>
+                        <p>Start</p>
+                      </div>
+                      <div class="switch-wrapper mx-auto">
+                        <label class="switch">
+                          <input id="strictButton" type="checkbox" checked>
+                          <div class="slider round"></div>
+                          <p>Strict</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="script/config.js"></script>
+    <script src="script/helpers.js"></script>
+    <script src="script/gameLogic.js"></script>
+    <script src="script/controls.js"></script>
+  </body>
+</html>
